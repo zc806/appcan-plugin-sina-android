@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport"
+        content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <link rel="stylesheet" href="css/ui-base.css">
+    <link rel="stylesheet" href="css/ui-box.css">
+    <link rel="stylesheet" href="css/ui-color.css">
+	<link rel="stylesheet" href="css/ui-res.css">
+    <link rel="stylesheet" href="css/ui-btn.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/zy_control.js">
+    </script>
+    <script src="js/zy_click.js">
+    </script>
+    <script type="text/javascript">
+		var cText = 0;
+var cJson = 1;
+var cInt = 2;
+    
+	window.uexOnload = function(){
+        uexSina.cbShare=function(opCode,dataType,data){
+		   alert(data);
+		   document.getElementById("showStatus").innerHTML = "返回分享状态码:"+data;
+		};
+		
+		uexSina.registerCallBack = function(opCode,dataType,data){
+		   alert(data);
+		   document.getElementById("selectItem").innerHTML = "返回注册状态码:"+data;
+		}
+		
+	}
+    function shareText(){
+        //分享文字
+        var txt = "中国最大的移动中间平台AppCan对新浪微博分享支持测试";
+        uexSina.sendTextContent(txt);
+    }
+	function sharePic(){
+        var content = "中国最大的移动中间平台AppCan对新浪微博分享的图片支持测试";
+        var realImgPath = "res://sotower.png";//http:// 本地
+        uexSina.sendImageContent(realImgPath,content);
+    }
+    function register(){
+        var appKey = "2045436852";
+        var appSecret = "4e47e691a516afad0fc490e05ff70ee5";
+        var registerUrl = "http://www.sina.com";
+        uexSina.registerApp(appKey,appSecret,registerUrl);
+    }
+		</script>
+  </head>
+<body class="um-vp " ontouchstart>
+	<div class="conbor">
+		<div class="consj">
+			<span>1.注册app id</span>
+			<input class="btn" type="button" value="注册App" onclick="register();">
+			<div class="tcxx" id="selectItem"></div><br>
+            <span>2.分享文字</span>
+            <input class="btn" type="button" value="分享文本" onclick="shareText();"><br>
+            <span>3.分享图片，以及文字，如果图片地址为http://则必须在新浪申请高级权限</span>
+            <input class="btn" type="button" value="分享图片" onclick="sharePic();">
+            <div class="tcxx" id="showStatus"></div><br>
+			<br>		
+		</div>
+	</div>
+</body>
+<script>
+
+</script>
+</html>

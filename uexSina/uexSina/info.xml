@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+    <plugin
+        uexName="uexSina" version="3.0.6" build="6">
+		<info>6:修改uexSina插件中的代码错误</info>
+		<build>5:修改uexSina插件中registerCallBack和cbShare回调方法返回值：成功为0，失败为1</build>
+        <build>4:修复分享图片时路径解析错误问题</build>
+        <build>3:修复适配3.0新引擎的问题</build>
+        <build>2:修复回调数据与文档不一致的问题</build>
+        <build>1:修复插件配置问题</build>
+		<build>0:新浪分享功能插件</build>
+    </plugin>
+</uexplugins>

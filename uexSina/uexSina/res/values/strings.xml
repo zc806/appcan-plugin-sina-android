@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <!-- sina weibo -->
+    <string name="plugin_sina_create_ok">关注成功</string>
+    <string name="plugin_sina_send_ok">发送成功</string>
+    <string name="plugin_sina_file_not_exist">文件不存在:</string>
+    <string name="plugin_sina_auth_ok">认证成功</string>
+    <string name="plugin_sina_image_too_large">图片尺寸应小于5M</string>
+    <string name="plugin_sina_enter_image_des">请输入图片描述</string>
+    <string name="plugin_sina_image_des_too_long">图片描述应不超过140字</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_toast_auth_register">未授权，请注册应用</string>
+    <string name="weibosdk_demo_toast_auth_completed">已经授权, 无需再次授权</string>
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<uexplugins>
+     <!-- sina share -->
+     <plugin
+          className="org.zywx.wbpalmstar.plugin.uexsina.EUExSina"
+          uexName="uexSina">
+          <method name="registerApp"/>
+          <method name="sendTextContent"/>
+          <method name="sendImageContent"/>
+		  <method name="cleanUserInfo"/>
+      </plugin>
+</uexplugins>
